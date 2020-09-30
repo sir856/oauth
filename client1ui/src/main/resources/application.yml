@@ -1,0 +1,27 @@
+server:
+    port: 8082
+    servlet:
+      context-path: /ui
+    session:
+      cookie:
+        name: UISESSION
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: ca590273ed4aacf25d8e
+      clientSecret: 87e1e02e6f20adf8253ec8620c5e0ab015f577a5
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+#      scope: openid
+    resource:
+      userInfoUri: https://api.github.com/user
+#    client:
+#      clientId: 12869378081-p06sq0ofkk156cqtqhudrtko5aqe3tlp.apps.googleusercontent.com
+#      clientSecret: IoxsJBytX35ky0DE3imsPVzL
+#      accessTokenUri: https://www.googleapis.com/oauth2/v3/token
+#      userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+#      scope: openid
+#    resource:
+#      userInfoUri: https://www.googleapis.com/userinfo/v2/me
